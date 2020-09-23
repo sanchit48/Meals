@@ -1,16 +1,19 @@
-# meals
+# Meals
 
-A new Flutter project.
 
-## Getting Started
+## About
 
-This project is a starting point for a Flutter application.
+This is an app which shows different types of food categories and various options for selecting them.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Features
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Shows ingredients and steps to make for various types of food.
+- Shows categories of different types of food according to countries.
+- Filter food according to veg, non-veg, lactose, gluten-free.
+- Has the option of adding your favorite food in a separate screen.
+
+## Screenshots
+
+ <img src="images/Options.jpeg" width="350" height="650" /> <img src="images/Favourites.jpeg" width="350" height="650" /> | <img src="images/Food.jpeg" width="350" height="650" /> | <img src="images/Ingredients.jpeg" width="350" height="650" /> | <img src="images/Menu.jpeg" width="350" height="650" /> <img src="images/Filters.jpeg" width="350" height="650" />
+
