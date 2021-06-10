@@ -13,6 +13,7 @@ class FavoritesScreen extends StatelessWidget {
 
     if(favoriteMeals.isEmpty) {
 
+     print("Hhe,");
       return Center(child: Text('You have no favorites yet - Start adding some'));
 
     }

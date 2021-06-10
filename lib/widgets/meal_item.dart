@@ -106,7 +106,6 @@ class MealItem extends StatelessWidget {
                     width: double.infinity,
                     fit: BoxFit.cover,
 
-
                   ),
 
                 ),

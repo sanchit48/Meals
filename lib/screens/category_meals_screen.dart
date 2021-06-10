@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:meals/widgets/meal_item.dart';
 import '../models/meal.dart';
 
-
 class CategoryMealsScreen extends StatefulWidget {
 
   static const routeName = '/category-meals';
@@ -21,7 +20,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
   String categoryTitle;
   List<Meal> displayMeals;
   bool _loadedInitData = false;
-
 
   @override
   void didChangeDependencies() {

@@ -4,7 +4,6 @@ import 'package:meals/models/meal.dart';
 import 'package:meals/screens/filters_screen.dart';
 import 'package:meals/screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
-import './screens/categories_screen.dart';
 import './screens/meal_detail_screen.dart';
 
 void main() => runApp(MyApp());
@@ -30,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   List<Meal> _avalaibleMeals = DUMMY_MEALS;
   List<Meal> _favoriteMeals = [];
 
-  void _setFilters(Map<String, bool> filterData) {
+  void _saveFilters(Map<String, bool> filterData) {
 
     setState(() {
 
@@ -100,12 +99,14 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
 
         primarySwatch: Colors.pink,
-        accentColor: Colors.amber,
+        // The foreground color for widgets (knobs, text, overscroll edge effect, etc).
+        accentColor: Colors.orange,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
 
           body1: TextStyle(
+            // red green blue, orange
             color: Color.fromRGBO(20, 51, 51, 1),
           ),
 
@@ -130,7 +131,7 @@ class _MyAppState extends State<MyApp> {
         '/': (ctx) => TabsScreen(_favoriteMeals),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(_avalaibleMeals),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(_toggleFavorite, _isMealFavorite),
-        FiltersScreen.routeName: (ctx) => FiltersScreen(_filters, _setFilters),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(_filters, _saveFilters),
 
       },
 
